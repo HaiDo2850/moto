@@ -46,6 +46,4 @@ public class MotoA extends MotoBike{
         super.setPrice(price);
     }
 
-
-
 }

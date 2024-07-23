@@ -3,7 +3,6 @@ public class MotoBike {
     private String name;
     private double price;
     private int cc;
-    static int idIncrement = 1;
 
     public MotoBike(int id, String name, double price, int cc) {
         this.id = id;
@@ -48,21 +47,4 @@ public class MotoBike {
         this.cc = cc;
     }
 
-    public static int getIdIncrement() {
-        return idIncrement;
-    }
-
-    public static void setIdIncrement(int idIncrement) {
-        MotoBike.idIncrement = idIncrement;
-    }
-
-    @Override
-    public String toString() {
-        return "MotoBike{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", cc=" + cc +
-                '}';
-    }
 }
